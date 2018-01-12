@@ -1,0 +1,9 @@
+std_msgs/Header header
+uint8 load_switch
+uint8 manual_charging_connecting
+uint8 auto_charging_connecting
+uint8 battery_undervoltage
+uint8 battery_overvoltage
+uint8 battery_overflow
+uint8 charging_state
+uint8 undefine

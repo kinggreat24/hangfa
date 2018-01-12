@@ -1,0 +1,6 @@
+<launch>
+	<node name="unique_tts_node" pkg="unique_tts" type="unique_tts_node" output="screen">
+		<param name="unique_tts_port" value="/dev/ttyUSB0" type="string"/>
+		<param name="unique_tts_baudrate" value="9600" type="int"/>	
+	</node>
+</launch>

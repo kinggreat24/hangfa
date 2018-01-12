@@ -1,0 +1,9 @@
+<launch>
+	<node name="hangfa_uart_platform_node" pkg="hangfa_uart_platform" type="hangfa_uart_platform_node" output="screen">
+		<remap from="/cmd_vel" to="/joy_teleop/cmd_vel" />
+		<param name="hangfa_uart_port" value="/dev/ttyUSB0" type="string"/>
+		<param name="hangfa_uart_baudrate" value="115200" type="int"/>	
+		<param name="controller_type" value="1" type="int"/>
+		<param name="max_speed" value="7" type="int"/>
+	</node>
+</launch>

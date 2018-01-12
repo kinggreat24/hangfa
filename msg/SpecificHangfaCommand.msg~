@@ -1,0 +1,10 @@
+uint8 GetDeviceStatus  = 42      #读取设备运行状态
+uint8 RestoreMotorDriver = 43    #复位所有电机驱动
+uint8 ClearBuffer = 44           #清除缓冲区
+uint8 ClearErrorFlag = 45        #清除错误标志
+uint8 BeginAction = 46           #开始执行缓冲的动作
+uint8 PauseAction = 47           #暂停动作
+uint8 ContinueAction = 48        #继续之前暂停的指令
+uint8 StopAction = 49            #停止动作
+uint8 JumpToNextCommand = 50     #跳到下一条指令
+uint8 HoldPosition = 53          #原地等待

@@ -1,0 +1,30 @@
+#command type
+uint8 Device_type = 20              #读取设备类型
+uint8 Device_version = 21           #读取设备版本信息
+uint8 Device_serialNumber = 22      #读取设备序列号
+uint8 Save_config = 23　　　　　　　　　　　　　　#保存当前参数到处理器用户参数存储区
+uint8 Restore_factory_setting = 24  #恢复出厂设置
+uint8 Device_restart = 25           #设备重启
+uint8 GetDeviceConfig = 27          #读取所有参数
+uint8 SetDeviceConfig = 28          #设置所有参数
+uint8 GetSingleParam = 29           #读单个参数
+uint8 SetSingleParam = 30           #设置单个参数
+uint8 SetSonarAlarmState = 31       #设置超声波传感器报警状态
+uint8 Respond = 255                 #应答
+
+#specific command
+uint8 GetDeviceStatus  = 42      #读取设备运行状态
+uint8 RestoreMotorDriver = 43    #复位所有电机驱动
+uint8 ClearBuffer = 44           #清除缓冲区
+uint8 ClearErrorFlag = 45        #清除错误标志
+uint8 BeginAction = 46           #开始执行缓冲的动作
+uint8 PauseAction = 47           #暂停动作
+uint8 ContinueAction = 48        #继续之前暂停的指令
+uint8 StopAction = 49            #停止动作
+uint8 JumpToNextCommand = 50     #跳到下一条指令
+uint8 HoldPosition = 53          #原地等待
+
+uint8 device_type
+uint8 device_address
+uint8 command_type
+

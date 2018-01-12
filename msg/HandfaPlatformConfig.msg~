@@ -1,0 +1,70 @@
+#uart baudrate 
+uint8 Uart_baudrate_300    = 0
+uint8 Uart_baudrate_1200   = 1
+uint8 Uart_baudrate_2400   = 2
+uint8 Uart_baudrate_4800   = 3
+uint8 Uart_baudrate_9600   = 4
+uint8 Uart_baudrate_19200  = 5
+uint8 Uart_baudrate_38400  = 6
+uint8 Uart_baudrate_57600  = 7
+uint8 Uart_baudrate_115200 = 8
+
+
+#can baudrate
+uint8 Can_baudrate_5k     = 0
+uint8 Can_baudrate_10k    = 1
+uint8 Can_baudrate_20k    = 2
+uint8 Can_baudrate_40k    = 3
+uint8 Can_baudrate_50k    = 4
+uint8 Can_baudrate_80k    = 5
+uint8 Can_baudrate_100k   = 6
+uint8 Can_baudrate_125k   = 7
+uint8 Can_baudrate_200k   = 8
+uint8 Can_baudrate_250k   = 9
+uint8 Can_baudrate_400k   = 10
+uint8 Can_baudrate_500k   = 11
+uint8 Can_baudrate_800k   = 12
+uint8 Can_baudrate_1M     = 13
+
+
+#enable fan
+uint8 Enable_fan  = 1
+uint8 Disable_fan = 0
+
+
+#platform type
+uint8 Three_Ordinary_Omnidirectional_wheels = 0     
+uint8 Four_45_Omnidirectional_wheels       = 1
+uint8 Four_Ordinary_Omnidirectional_wheels = 2     
+
+#motor driver type
+uint8 RMC_DC36_10S1 = 0                 #RMC_DC36_10S1
+uint8 DCS303        = 1                 #雷赛 DCS303
+uint8 Copley        = 2                 #Copley 电机驱动
+uint8 Homemade      = 3                 #自制驱动
+
+uint32 uart_baudrate                    #uart波特率
+uint32 can_baudrate                     #can波特率　　　　　　　　　　　　     
+uint32 device_address                   #设备地址
+uint32 min_interval                     #动作分解最小时间段(单位：　ms)
+uint32 max_run_time                     #速度模式指令最长运行时间(单位：s,1~600)   　　　　　　　　　　 　
+float32 origin_orientation              #用户初始方向(单位: °C)
+uint32 enable_fan                       #是否使用风扇
+uint32 cpu_max_temperature              #设备允许最高温度
+uint32 fan_start_temperature            #风扇启动门限温度(单位: °C)
+uint32 platform_type                    #平台类型
+float32 motive_wheel_perimeter          #动力轮周长(单位：米)
+float32 distance_motive_wheel_center    #动力轮周长(单位：米)
+float32 distance_motive_wheel_x_center  #动力轮到平台中心 X 方向距离(单位：米)
+float32 distance_motive_wheel_y_center  #动力轮到平台中心 Y 方向距离(单位：米)
+float32[4] wheel_rotation_adjust_coefficient     #轮子转动矫正系数
+float32[4] wheel_linear_adjust_coefficient       #轮子直线运动矫正系数（对 4 轮全向轮为 X 向）
+float32[4] wheel_linear_y_adjust_coefficient     #轮子Y方向直线运动矫正系数（对 4 轮全向轮为 X 向）
+uint8 motor_driver_type
+uint8 undefine_1
+float32 motor_deceleration_ratio        #电机减速比（1~100,精度 0.01）    
+uint32  encoder_lines_number            #编码器线数
+int32 motor_driver_max_speed            #电机驱动的最大速度参数
+
+
+

@@ -1,0 +1,3 @@
+uint8 device_type
+string hardware_version
+string software_version
